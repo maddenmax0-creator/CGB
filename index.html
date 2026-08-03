@@ -20,6 +20,7 @@
   <meta property="og:type" content="website" />
   <link rel="icon" type="image/png" href="https://github.com/maddenmax0-creator/CGB/blob/main/favicon.png?raw=true" />
   <link rel="apple-touch-icon" href="https://github.com/maddenmax0-creator/CGB/blob/main/favicon.png?raw=true" />
+  <link rel="canonical" href="https://cgbindustries.com.au/" />
 <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -599,6 +600,23 @@
       background: var(--concrete);
       flex-shrink: 0;
     }
+
+    .service-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 24px;
+      text-decoration: none;
+      font-family: 'Oswald', sans-serif;
+      font-weight: 400;
+      font-size: 0.75rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--concrete);
+      transition: gap 0.2s, color 0.2s;
+    }
+
+    .service-link:hover { gap: 12px; color: var(--white); }
 
     /* ── MARQUEE TICKER — ambient motion between sections ── */
     .marquee-strip {
@@ -1375,6 +1393,10 @@
           <li>Commercial surfaces</li>
           <li>Fencing &amp; retaining walls</li>
         </ul>
+        <a href="pressure-washing.html" class="service-link">
+          Pressure Washing Details
+          <svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
       </div>
       <div class="service-card reveal reveal-d1">
         <div class="service-name">Concrete Sealing</div>
@@ -1385,6 +1407,10 @@
           <li>UV-resistant finishes</li>
           <li>Anti-slip coatings</li>
         </ul>
+        <a href="concrete-sealing.html" class="service-link">
+          Concrete Sealing Details
+          <svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
       </div>
     </div>
   </div>
@@ -1688,7 +1714,8 @@
       <div class="footer-tag">Concrete · Restoration · Protection</div>
     </div>
     <ul class="footer-nav">
-      <li><a href="#services">Services</a></li>
+      <li><a href="pressure-washing.html">Pressure Washing</a></li>
+      <li><a href="concrete-sealing.html">Concrete Sealing</a></li>
       <li><a href="#gallery">Gallery</a></li>
       <li><a href="#why">About</a></li>
       <li><a href="#testimonials">Reviews</a></li>
