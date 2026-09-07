@@ -28,9 +28,10 @@
 <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
+    "@id": "https://cgbindustries.com.au/#business",
     "name": "CGB Industries",
-    "image": "https://cgbindustries.com.au/img2/hero-pressure-washed-driveway-sunshine-coast.webp",
+    "image": "https://cgbindustries.com.au/img2/og-image.jpg",
     "logo": "https://cgbindustries.com.au/logo1.png",
     "url": "https://cgbindustries.com.au/",
     "telephone": "+61414438169",
@@ -43,34 +44,43 @@
       "addressCountry": "AU"
     },
     "areaServed": [
-      { "@type": "City", "name": "Buderim" },
-      { "@type": "City", "name": "Maroochydore" },
-      { "@type": "City", "name": "Mooloolaba" },
-      { "@type": "City", "name": "Caloundra" },
-      { "@type": "AdministrativeArea", "name": "Sunshine Coast" }
+      { "@type": "Place", "name": "Buderim" },
+      { "@type": "Place", "name": "Forest Glen" },
+      { "@type": "Place", "name": "Maroochydore" },
+      { "@type": "Place", "name": "Mooloolaba" },
+      { "@type": "Place", "name": "Caloundra" },
+      { "@type": "Place", "name": "Nambour" },
+      { "@type": "Place", "name": "Sippy Downs" },
+      { "@type": "Place", "name": "Mountain Creek" },
+      { "@type": "Place", "name": "Mons" },
+      { "@type": "Place", "name": "Sunshine Coast QLD" }
     ],
     "sameAs": [
       "https://www.instagram.com/cgb_industries",
       "https://www.facebook.com/cgbindustries"
     ],
-    "makesOffer": [
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Pressure Washing",
-          "description": "Rotary surface cleaning for driveways, paths, pool surrounds, commercial surfaces, fencing and retaining walls."
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Pressure Washing",
+            "description": "Rotary surface cleaning for driveways, paths, pool surrounds, commercial surfaces, fencing and retaining walls."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Concrete Sealing",
+            "description": "Clear or colour-enhanced sealers rated for UV and salt exposure, including anti-slip coatings."
+          }
         }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Concrete Sealing",
-          "description": "Clear or colour-enhanced sealers rated for UV and salt exposure, including anti-slip coatings."
-        }
-      }
-    ],
+      ]
+    },
     "review": [
       {
         "@type": "Review",
