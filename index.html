@@ -1269,6 +1269,18 @@
       outline-offset: 3px;
     }
 
+    /* ── FOOTER SERVICE AREAS ── */
+    .footer-areas-title {
+      font-family: 'Oswald', sans-serif; font-weight: 400; font-size: 0.62rem;
+      letter-spacing: 0.24em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px;
+    }
+    .footer-areas-list { display: flex; gap: 16px; list-style: none; flex-wrap: wrap; }
+    .footer-areas-list a {
+      text-decoration: none; font-size: 0.72rem; font-weight: 500;
+      letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); transition: color 0.2s;
+    }
+    .footer-areas-list a:hover { color: var(--white); }
+
     /* ── MOBILE ── */
     @media (max-width: 768px) {
       nav { height: 56px; }
@@ -1320,6 +1332,8 @@
       .footer-right { text-align: center; }
       .footer-legal { justify-content: center; }
       .footer-nav { flex-wrap: wrap; justify-content: center; gap: 14px; }
+      .footer-areas { display: flex; flex-direction: column; align-items: center; }
+      .footer-areas-list { justify-content: center; }
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -1735,6 +1749,13 @@
       <li><a href="#testimonials">Reviews</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
+    <div class="footer-areas">
+      <div class="footer-areas-title">Service Areas</div>
+      <ul class="footer-areas-list">
+        <li><a href="/pressure-washing-buderim">Buderim</a></li>
+        <li><a href="/pressure-washing-forest-glen">Forest Glen</a></li>
+      </ul>
+    </div>
     <div class="footer-right">
       <div>0414 438 169</div>
       <div>cgbindustries@outlook.com.au</div>
